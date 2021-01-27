@@ -9,6 +9,14 @@ public class Main {
     }
 
     private static void doSelectionSort(int[] intArray) {
+        doSelectionSortApproachOne(intArray);
+        // doSelectionSortApproachTwo(intArray);
+
+        printArray(intArray);
+    }
+
+    private static void doSelectionSortApproachOne(int[] intArray) {
+        // Pushing the largest or the smallest number on the right side
         for (int i = intArray.length - 1; i > 0; i--) {
             int largest = 0;
 
@@ -20,13 +28,26 @@ public class Main {
 
             swap(intArray, i, largest);
         }
+    }
 
-        printArray(intArray);
+    private static void doSelectionSortApproachTwo(int[] intArray) {
+        // Pushing the largest or the smallest number on the left side
+        for (int i = 0; i < intArray.length; i++) {
+            int largest = intArray.length - 1;
+
+            for (int j = intArray.length - 1; j >= i; j--) {
+                if (intArray[j] > intArray[largest]) { // (<) : Small to Large & (>) : Large to Small
+                    largest = j;
+                }
+            }
+
+            swap(intArray, i, largest);
+        }
     }
 
     private static void doBubbleSort(int[] intArray) {
         doBubbleSortApproachOne(intArray);
-        //doBubbleSortApproachTwo(intArray);
+        // doBubbleSortApproachTwo(intArray);
 
         printArray(intArray);
     }
