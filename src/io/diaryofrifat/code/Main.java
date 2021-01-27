@@ -5,7 +5,23 @@ public class Main {
     public static void main(String[] args) {
         int[] intArray = {20, 35, -15, 7, 55, 1, -22};
 
-        doSelectionSort(intArray);
+        doInsertionSort(intArray);
+    }
+
+    private static void doInsertionSort(int[] intArray) {
+        for (int i = 1; i < intArray.length; i++) {
+            int currentElement = intArray[i];
+
+            int j;
+
+            for (j = i; j > 0 && intArray[j - 1] > currentElement; j--) {
+                intArray[j] = intArray[j - 1];
+            }
+
+            intArray[j] = currentElement;
+        }
+
+        printArray(intArray);
     }
 
     private static void doSelectionSort(int[] intArray) {
