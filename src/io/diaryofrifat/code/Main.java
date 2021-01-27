@@ -5,6 +5,10 @@ public class Main {
     public static void main(String[] args) {
         int[] intArray = {20, 35, -15, 7, 55, 1, -22};
 
+        doBubbleSort(intArray);
+    }
+
+    private static void doBubbleSort(int[] intArray) {
         for (int i = intArray.length - 1; i > 0; i--) {
             for (int j = 0; j < i; j++) {
                 if (intArray[j] > intArray[j + 1]) {
