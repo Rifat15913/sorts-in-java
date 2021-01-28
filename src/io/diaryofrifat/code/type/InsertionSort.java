@@ -3,7 +3,7 @@ package io.diaryofrifat.code.type;
 import static io.diaryofrifat.code.Utils.printArray;
 
 public class InsertionSort {
-    public static void doInsertionSort(int[] intArray) {
+    public static void sort(int[] intArray) {
         for (int i = 1; i < intArray.length; i++) {
             int currentElement = intArray[i];
 

@@ -4,7 +4,7 @@ import static io.diaryofrifat.code.Utils.printArray;
 import static io.diaryofrifat.code.Utils.swap;
 
 public class BubbleSort {
-    public static void doBubbleSort(int[] intArray) {
+    public static void sort(int[] intArray) {
         doBubbleSortApproachOne(intArray);
         // doBubbleSortApproachTwo(intArray);
 

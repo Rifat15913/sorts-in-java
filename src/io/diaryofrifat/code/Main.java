@@ -1,12 +1,12 @@
 package io.diaryofrifat.code;
 
-import static io.diaryofrifat.code.type.InsertionSort.doInsertionSort;
+import io.diaryofrifat.code.type.InsertionSort;
 
 public class Main {
 
     public static void main(String[] args) {
         int[] intArray = {20, 35, -15, 7, 55, 1, -22};
 
-        doInsertionSort(intArray);
+        InsertionSort.sort(intArray);
     }
 }

@@ -4,7 +4,7 @@ import static io.diaryofrifat.code.Utils.printArray;
 import static io.diaryofrifat.code.Utils.swap;
 
 public class SelectionSort {
-    public static void doSelectionSort(int[] intArray) {
+    public static void sort(int[] intArray) {
         doSelectionSortApproachOne(intArray);
         // doSelectionSortApproachTwo(intArray);
 
